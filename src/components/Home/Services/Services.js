@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Anrolled from '../../Anrolled/Anrolled/Anrolled';
+
 
 import Service from '../Service/Service';
 import './Services.css'
@@ -7,14 +7,14 @@ import './Services.css'
 const Services = () => {
     const [services, setServices] = useState([])
     useEffect(() => {
-        fetch('gymservices.json')
+        fetch('https://frozen-plateau-35169.herokuapp.com/appoint')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
 
     return (
         <div className="container">
-            <h1>Our Services</h1>
+            <h1>Our Products</h1>
             <div className="row">
                 {
                     services.map(service => <Service

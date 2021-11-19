@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Service = ({ service }) => {
-    const { id, name, img, details, fee, } = service
+const Product = ({ product }) => {
+    const { id, name, img, details, fee } = product
     return (
         <div className="bg-secondary text-white col-lg-4 col-sm-6 col-12 p-3 border">
             <h2 className="">{name}</h2>
@@ -16,4 +16,4 @@ const Service = ({ service }) => {
     );
 };
 
-export default Service;
+export default Product;

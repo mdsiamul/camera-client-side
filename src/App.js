@@ -11,7 +11,12 @@ import AuthProvider from './context/AuthProvider';
 import PrivetRoute from './components/Login/Login/privetRoute/PrivetRoute';
 import Footer from './components/Shared/Footer/Footer';
 import About from './components/About/About';
-import Contact from './components/ContactUs/Contact';
+import Reviews from './components/Reviews/Reviews';
+import Dashboard from './components/Dashboard/Dashboard';
+import Myorder from './components/Dashboard/Myorder/Myorder';
+import Pay from './components/Dashboard/Pay/Pay';
+import Products from './components/Home/Products/Products';
+
 
 function App() {
   return (
@@ -28,9 +33,22 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
-            <Route path="/contact">
-              <Contact></Contact>
+            <Route path="/products">
+              <Products></Products>
             </Route>
+            <Route path="/reviews">
+              <Reviews></Reviews>
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard></Dashboard>
+            </Route>
+            <Route path="/Myorder">
+              <Myorder></Myorder>
+            </Route>
+            <Route path="/Pay">
+              <Pay></Pay>
+            </Route>
+
             <Route path="/about">
               <About></About>
             </Route>
